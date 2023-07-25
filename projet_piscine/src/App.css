@@ -4,44 +4,223 @@
   text-decoration: none;
   list-style-type: none;
   font-family: "Poppins";
+  transition: all 0.2s ease-in-out;
 }
 
 :root {
-  --col1: grey;
   --white: white;
-  --Blue: rgb(9, 81, 168);
+  --whiteAlpha: rgba(255, 255, 255, 0.066);
+  --blue: rgb(9, 81, 168);
   --darkBlue: rgb(0, 0, 22);
+  --darkBlueAlpha: rgba(0, 0, 22, 0.18);
+  --pink: #ff00c2;
 }
 
 body {
-  background: var(--darkBlue);
-  height: 100vh;
   color: var(--white);
+  background-image: radial-gradient(
+    farthest-corner at 65% 400px,
+    var(--blue),
+    var(--darkBlue) 500px
+  );
 }
 
 a {
   color: var(--white);
+  padding: 0;
 }
+
+/* HEADER */
 
 .main-header {
-  display: flex;
-  justify-content: space-between;
-  margin: 15px;
-  padding: 20px;
-  border-radius: 20px;
-  background: rgba( 255, 255, 255, 0.4 );
-  /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
-  backdrop-filter: blur( 14px );
-  -webkit-backdrop-filter: blur( 14px );
-  /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
-
+  position: fixed;
+  width: 100%;
+  z-index: 9;
 }
+
+.header-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: end;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.206);
+  /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+}
+
 
 .main-nav ul {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  padding: 6px;
 }
 
 .main-nav ul li {
-  margin: 0 10px;
   color: var(--white);
+
 }
+
+.user-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.2s ease-in;  
+  padding: 6px;
+  border: 1px solid rgba(128, 128, 128, 0);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.user-btn img {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--white);
+}
+
+/* .user-btn:before {
+  content: "Connexion / Inscription";
+  transform: translateY(100px);
+  transition: all 0.3s ease-in;
+}
+
+.user-btn:hover:before {
+  transform: translateX(0px);
+
+}
+
+.user-btn:hover {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), var(--darkBlueAlpha));
+  border-radius: 20px;  
+  width: 220px;
+} */
+
+
+/* BANNER */
+
+.main-container {
+  position: relative;
+  height: 100vh;
+}
+
+.text-intro {
+  position: absolute;
+  top: 25%;
+  left: 8%;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 4rem;
+}
+
+h1 span {
+  font-weight: 300;
+  font-size: 4rem;
+}
+
+.text-intro p {
+  font-weight: 200;
+  opacity: 0.5;
+  margin-top: 10px;
+}
+
+.banner-img {
+  height: 70%;
+  width: auto;
+  position: absolute;
+  right: 6%;
+  top: 15%;
+  z-index: -1;
+}
+
+.banner-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.networks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -140px;
+  top: 50%;
+  transform: rotate(-90deg) translateY(-50%);
+  /* opacity: 0.5; */
+}
+
+.networks svg {
+  margin: 6px 8px 0 0;
+  fill: var(--white);
+  transform: rotate(90deg);
+}
+
+.networks svg:hover {
+  transform: scale(1.1) rotate(80deg);
+}
+
+.social-separator {
+  width: 50px;
+  height: 1px;
+  background-color: var(--white);
+  margin: 0 20px;
+}
+
+/* INDICATORS */
+
+.indicator-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: var(--darkBlueAlpha);
+  padding: 10vh;
+}
+
+.indicator-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25vw;
+  width: 25vw;
+  background-color: var(--darkBlueAlpha);
+  border: 1px solid var(--whiteAlpha);
+  border-radius: 20px;
+}
+
+.indicator-box>:first-child {
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+/* BIO */
+
+.bio-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20vh 10vh;
+}
+
+.bio-img-container {
+  width: 15vw;
+  height: 15vw;
+}
+
+.bio-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.biography {
+  max-width: 40%;
+}
+
+
