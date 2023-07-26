@@ -24,7 +24,7 @@ function Bio() {
                 Faites le choix du design d'exception avec <strong>LUMINARY</strong></p><p>Laissez-nous transformer votre vision en une réalité visuelle époustouflante qui impressionnera et inspirera votre public.
                 </p>
                 <a href="" className="btn">Nous contacter</a>
-                <img className="contact-banner-img" src="./pages.png" alt="" />
+                <img className="contact-banner-img" src="./3D_flower.png" alt="" />
             </div>
             </div>
         </section>

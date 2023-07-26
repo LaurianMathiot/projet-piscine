@@ -10,6 +10,7 @@
   --white: white;
   --whiteAlpha: rgba(255, 255, 255, 0.066);
   --blue: rgb(37, 19, 115);
+  --lightBlue: #09C0EF;
   --darkBlue: rgb(0, 0, 22);
   --darkBlueAlpha: rgba(0, 0, 22, 0.18);
   --shadow: rgba(0, 0, 22, 0.629);
@@ -34,6 +35,12 @@ a {
   max-width: 1100px;
   margin: auto;
   padding: 5vh 0;
+}
+
+strong {
+  font-family: 'Restora';
+  font-size: 1rem;
+  margin: 0 3px;
 }
 
 /* HEADER */
@@ -92,7 +99,7 @@ a {
   content:"Accès\0000A0client";
   position: absolute;
   right: 60px;
-  top: 16px;
+  top: 19px;
 }
 
 .user-btn:hover {
@@ -193,7 +200,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   right: -140px;
   top: 50%;
   transform: rotate(-90deg) translateY(-50%);
@@ -234,16 +241,20 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 20vw;
-  width: 20vw;
+  height: 12vw;
+  width: 12vw;
   background-color: var(--darkBlueAlpha);
   border: 1px solid var(--whiteAlpha);
   border-radius: 20px;
 }
 
 .indicator-box>:first-child {
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 700;
+}
+
+.indicator-box p {
+  font-size: 0.8rem;
 }
 
 /* BIO */
@@ -385,16 +396,22 @@ h1 {
 }
 
 .contact-banner {
-  background: linear-gradient(-60deg, var(--pink), var(--blue));
-  margin: auto;
-  margin-top: 20vh;
+  background: linear-gradient(120deg, var(--blue),var(--pink) 60%, var(--lightBlue));
+  margin: 20vh 0;
   padding: 3vh;
   border-radius: 20px;
   position: relative;
+  overflow: hidden;
 }
 
 .contact-banner p {
   max-width: 60%;
+}
+
+.contact-banner p + p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-top: 8px;
 }
 
 .btn {
@@ -413,8 +430,9 @@ h1 {
 }
 
 .contact-banner-img {
-  height: 280px;
+  height: 400px;
+  mix-blend-mode: overlay;
   position: absolute;
-  right: 0;
-  top: -40px
+  right: -100px;
+  top: -50%
 }
