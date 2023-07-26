@@ -1,6 +1,6 @@
 function Indicator() {
      return (
-        <section className="indicator-section">
+        <section className="indicator-section container">
             <div className="indicator-box clients">
                 <p>46</p>
                 <p>clients</p>
