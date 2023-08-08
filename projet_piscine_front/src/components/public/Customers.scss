@@ -1,0 +1,47 @@
+.customers-wrap {
+  margin-top: 4vh;
+  position: relative;
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    background: linear-gradient(90deg, var(--darkBlue), rgba(255, 255, 255, 0));
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    background: linear-gradient(
+      -90deg,
+      var(--darkBlue),
+      rgba(255, 255, 255, 0)
+    );
+  }
+
+  .customers-logo-container {
+    background-color: var(--whiteAlpha);
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .customers-white-logo {
+      width: 90%;
+      object-fit: contain;
+      opacity: 0.6;
+    }
+  }
+}

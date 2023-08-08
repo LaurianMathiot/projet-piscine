@@ -1,0 +1,30 @@
+.indicator-section {
+  display: grid;
+  gap: 5vw;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: var(--darkBlueAlpha);
+  padding: 7vh;
+  margin: auto;
+
+  .indicator-box {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 12vw;
+    width: 12vw;
+    background-color: var(--darkBlueAlpha);
+    border: 1px solid var(--whiteAlpha);
+    border-radius: 20px;
+
+    & > :first-child {
+      font-size: 5rem;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}

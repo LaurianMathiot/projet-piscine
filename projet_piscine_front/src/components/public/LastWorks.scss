@@ -1,0 +1,19 @@
+.select-btn {
+  border-radius: 0;
+  padding: 10px 15px;
+  transition: all 0.2s ease-in-out;
+  border: 0.5px solid var(--white);
+
+  &:first-child {
+    border-radius: 8px 0 0 8px;
+  }
+
+  &:last-child {
+    border-radius: 0 8px 8px 0;
+  }
+
+  &:hover {
+    background: none;
+    color: var(--white);
+  }
+}

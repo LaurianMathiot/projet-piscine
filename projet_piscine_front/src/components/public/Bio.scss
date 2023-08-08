@@ -1,0 +1,150 @@
+/* BIO */
+
+.bio-section {
+  padding: 10vh;
+  background-image: radial-gradient(
+    closest-corner at 80% 40%,
+    var(--blue),
+    var(--darkBlue) 105%
+  );
+
+  .bio-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .biography {
+      margin-top: 4vh;
+      max-width: 40%;
+      font-size: 0.8rem;
+      font-weight: 300;
+
+      & > :first-child {
+        margin-bottom: 10px;
+      }
+    }
+
+    .bio-imgs-container {
+      position: relative;
+      height: 300px;
+      width: 600px;
+
+      img {
+        width: 150px;
+        position: absolute;
+        filter: drop-shadow(50px 40px 20px var(--shadow));
+        transition: all 0.2s ease-in-out;
+      }
+
+      .t-3d {
+        width: 250px !important;
+        right: 120px;
+        top: 30px;
+        z-index: 3;
+        animation: float 10s ease-in-out infinite;
+      }
+
+      .palette-3d {
+        right: -10px;
+        top: 200px;
+        z-index: 4;
+        animation: floatx2 12s ease-in-out infinite;
+      }
+
+      .tools-3d {
+        right: 370px;
+        top: 0px;
+        z-index: 2;
+        animation: floatx2 6s ease-in-out infinite;
+      }
+
+      .progress-3d {
+        right: -30px;
+        top: -30px;
+        z-index: 1;
+        animation: float2 7s ease-in-out infinite;
+      }
+
+      .tablet-3d {
+        width: 500px !important;
+        right: -20px;
+        top: -60px;
+        z-index: 0;
+        animation: float 10s ease-in-out infinite;
+      }
+
+      &:hover img {
+        animation: none;
+      }
+    }
+  }
+
+  .contact-banner {
+    background: linear-gradient(
+      120deg,
+      var(--blue),
+      var(--pink) 60%,
+      var(--lightBlue)
+    );
+    padding: 3vh;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10vw;
+
+    & p {
+      max-width: 60%;
+    }
+
+    & p + p {
+      font-size: 0.8rem;
+      font-weight: 300;
+      margin-top: 8px;
+    }
+
+    .contact-banner-img {
+      height: 400px;
+      mix-blend-mode: overlay;
+      position: absolute;
+      right: -100px;
+      top: -50%;
+    }
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes float2 {
+  0% {
+    transform: translatey(0px) rotate(5deg);
+  }
+  50% {
+    transform: translatey(20px) rotate(-5deg);
+  }
+  100% {
+    transform: translatey(0px) rotate(5deg);
+  }
+}
+
+@keyframes floatx2 {
+  0% {
+    transform: translatex(0px);
+  }
+  50% {
+    transform: translatex(20px);
+  }
+  100% {
+    transform: translatex(0px);
+  }
+}
