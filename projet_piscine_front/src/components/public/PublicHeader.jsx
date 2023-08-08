@@ -4,7 +4,7 @@ function PublicHeader() {
   return (
     <header className="public-main-header">
       <div className="header-nav-container">
-        <img className="header-logo" src="./icon.svg" alt="main-logo" />
+        <img className="header-logo" src="./images/icon.svg" alt="main-logo" />
         <nav className="main-nav">
           <ul>
             <li>
@@ -20,7 +20,7 @@ function PublicHeader() {
         </nav>
       </div>
       <a href="" className="user-btn">
-        <img src="./user.png" alt="user-img" />
+        <img src="./images/user.png" alt="user-img" />
       </a>
     </header>
   );

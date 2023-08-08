@@ -13,7 +13,7 @@ function Banner() {
           <p>Graphiste et Développeur</p>
         </div>
         <div className="banner-img">
-          <img src="./3d_flower.png" alt="" />
+          <img src="./images/3d_flower.png" alt="" />
         </div>
         <div className="networks">
           <p>Suivez-nous sur : </p>

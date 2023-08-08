@@ -24,11 +24,11 @@ function Bio() {
             </p>
           </div>
           <div className="bio-imgs-container">
-            <img className="t-3d" src="./t-3D.svg" alt="" />
-            <img className="tools-3d" src="./tools2.png" alt="" />
-            <img className="progress-3d" src="./progress2.png" alt="" />
-            <img className="palette-3d" src="./palette-3D.svg" alt="" />
-            <img className="tablet-3d" src="./tablet2.png" alt="" />
+            <img className="t-3d" src="./images/t-3D.svg" alt="" />
+            <img className="tools-3d" src="./images/tools2.png" alt="" />
+            <img className="progress-3d" src="./images/progress2.png" alt="" />
+            <img className="palette-3d" src="./images/palette-3D.svg" alt="" />
+            <img className="tablet-3d" src="./images/tablet2.png" alt="" />
           </div>
         </div>
         <div className="contact-banner">
@@ -42,7 +42,11 @@ function Bio() {
           <a href="" className="btn rotate-btn">
             Nous contacter
           </a>
-          <img className="contact-banner-img" src="./3D_flower.png" alt="" />
+          <img
+            className="contact-banner-img"
+            src="./images/3D_flower.png"
+            alt=""
+          />
         </div>
       </div>
     </section>
