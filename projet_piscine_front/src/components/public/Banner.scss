@@ -6,21 +6,33 @@
 
   .text-intro {
     position: absolute;
-    bottom: 45%;
+    bottom: 30%;
     left: 8%;
 
     h1 {
       font-family: "Montserrat";
       font-size: 7rem;
-      line-height: 6rem;
+      line-height: 6.5rem;
+      color: var(--);
+
+      span {
+        font-weight: 400;
+        font-size: 6rem;
+      }
     }
 
     p {
-      font-weight: 200;
-      opacity: 0.5;
+      color: var(--lightBlue);
+      font-weight: 400;
+      //   opacity: 0.5;
       margin-top: 30px;
       padding-left: 10px;
       letter-spacing: 1rem;
+      line-height: 1.5rem;
+
+      span {
+        margin-left: 7vw;
+      }
     }
   }
 

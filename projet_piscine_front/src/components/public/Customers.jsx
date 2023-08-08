@@ -4,7 +4,7 @@ function Customers() {
   return (
     <section className="customers-section">
       <div className="container">
-        <h2> Ils nous font confiance</h2>
+        <h2> Ils me font confiance</h2>
         <div className="customers-wrap">
           <div className="customers-logo-container">
             <img

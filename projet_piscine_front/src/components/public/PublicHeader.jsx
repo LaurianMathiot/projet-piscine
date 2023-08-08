@@ -4,7 +4,11 @@ function PublicHeader() {
   return (
     <header className="public-main-header">
       <div className="header-nav-container">
-        <img className="header-logo" src="./images/icon.svg" alt="main-logo" />
+        <img
+          className="header-logo"
+          src="./images/logo_lm.png"
+          alt="main-logo"
+        />
         <nav className="main-nav">
           <ul>
             <li>

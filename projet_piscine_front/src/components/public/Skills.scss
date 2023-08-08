@@ -1,0 +1,53 @@
+.skill-section {
+  .container {
+    h2 {
+      margin-bottom: 4vh;
+    }
+
+    .skill-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+
+      .skill-card {
+        background: linear-gradient(217deg, var(--pink), var(--blue));
+        height: 180px;
+        border-radius: 15px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: all 0.2s ease;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+
+        &:nth-child(2) {
+          background: linear-gradient(-217deg, var(--pink), var(--lightBlue));
+        }
+
+        &:nth-child(3) {
+          background: linear-gradient(-60deg, var(--pink), var(--lightBlue));
+        }
+
+        &:nth-child(4) {
+          background: linear-gradient(60deg, var(--pink), var(--blue));
+        }
+
+        .skill-card-plus {
+          justify-content: start;
+          gap: 5px;
+
+          p {
+            font-weight: 500;
+          }
+
+          svg {
+            fill: var(--white);
+          }
+        }
+      }
+    }
+  }
+}

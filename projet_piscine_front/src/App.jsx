@@ -6,6 +6,7 @@ import Customers from "./components/public/Customers";
 import Indicator from "./components/public/Indicator";
 import LastWorks from "./components/public/LastWorks";
 import PublicHeader from "./components/public/PublicHeader";
+import Skills from "./components/public/Skills";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Indicator />
       <Bio />
       <LastWorks />
+      <Skills />
       <Customers />
     </>
   );

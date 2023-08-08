@@ -8,19 +8,18 @@ function Bio() {
         <div className="bio-container">
           <div className="biography">
             <p>
-              Chez <strong>LUMINARY</strong> nous repoussons les limites de la
-              créativité pour donner vie à vos idées les plus audacieuses. Nous
-              sommes une agence de design innovante et passionnée qui se
-              consacre à créer des expériences esthétiques et fonctionnelles qui
-              enchantent vos sens et dépassent vos attentes.
+              Repoussons les limites de la créativité pour donner vie à vos
+              idées les plus audacieuses. Je suis un graphiste innovant et
+              passionné qui se consacre à créer des expériences esthétiques et
+              fonctionnelles qui enchantent vos sens et dépassent vos attentes.
             </p>
 
             <p>
-              Nous croyons que le design va au-delà de l'esthétique ; il doit
-              également être pratique et efficace. C'est pourquoi nous prenons
-              le temps de comprendre vos besoins, vos objectifs et votre public
-              cible afin de créer des solutions sur mesure qui répondent
-              parfaitement à vos exigences.
+              Pour moi, le design va au-delà de l'esthétique, il doit également
+              être pratique et efficace. C'est pourquoi je prends le temps de
+              comprendre vos besoins, vos objectifs et votre public cible afin
+              de créer des solutions sur mesure qui répondent parfaitement à vos
+              exigences.
             </p>
           </div>
           <div className="bio-imgs-container">
@@ -32,9 +31,7 @@ function Bio() {
           </div>
         </div>
         <div className="contact-banner">
-          <p>
-            Faites le choix du design d'exception avec <strong>LUMINARY</strong>
-          </p>
+          <p>Faites le choix du design d'exception</p>
           <p>
             Laissez-nous transformer votre vision en une réalité visuelle
             époustouflante qui impressionnera et inspirera votre public.

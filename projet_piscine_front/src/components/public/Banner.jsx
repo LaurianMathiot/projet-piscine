@@ -6,17 +6,21 @@ function Banner() {
       <div className="main-container">
         <div className="text-intro">
           <h1>
-            Laurian
+            <span>Laurian</span>
             <br />
             Mathiot
           </h1>
-          <p>Graphiste et Développeur</p>
+          <p>
+            Graphiste
+            <br />
+            <span>& Développeur</span>
+          </p>
         </div>
         <div className="banner-img">
           <img src="./images/3d_flower.png" alt="" />
         </div>
         <div className="networks">
-          <p>Suivez-nous sur : </p>
+          <p>Suivez-moi sur : </p>
           <div className="social-separator"></div>
           <a href="dribbble">
             <svg

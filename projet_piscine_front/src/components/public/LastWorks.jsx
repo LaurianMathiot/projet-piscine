@@ -5,7 +5,7 @@ function LastWorks() {
     <section className="last-works">
       <div className="container">
         <div className="flex">
-          <h2>Nos dernières réalisations</h2>
+          <h2>Mes dernières réalisations</h2>
           <div>
             <a className="btn select-btn" href="">
               Tout
