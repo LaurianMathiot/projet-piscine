@@ -5,8 +5,9 @@ import Indicator from "../../components/public/Indicator";
 import LastWorks from "../../components/public/LastWorks";
 import PublicHeader from "../../components/public/PublicHeader";
 import Skills from "../../components/public/Skills";
+import "../../App.scss";
 
-function Homepage() {
+function HomePage() {
   return (
     <>
       <PublicHeader />
@@ -20,4 +21,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+export default HomePage;

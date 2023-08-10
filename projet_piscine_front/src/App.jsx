@@ -1,13 +1,15 @@
 import "./App.scss";
 import "./Buttons.scss";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Homepage from "./pages/public/Homepage";
+import HomePage from "./pages/public/HomePage";
+import LoginPage from "./pages/public/LoginPage";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Homepage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
     </BrowserRouter>
   );

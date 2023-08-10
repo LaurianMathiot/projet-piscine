@@ -2,7 +2,7 @@ import "./Indicator.scss";
 
 function Indicator() {
   return (
-    <section className="indicator-section container">
+    <section className="indicator-section">
       <div className="indicator-box clients">
         <p>46</p>
         <p>clients</p>

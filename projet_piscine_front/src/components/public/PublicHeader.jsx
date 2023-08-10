@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import "./PublicHeader.scss";
 
 function PublicHeader() {
   return (
     <header className="public-main-header">
-      <div className="header-nav-container">
+      <div className="header-nav-container blur">
         <img
           className="header-logo"
           src="./images/logo_lm.png"
@@ -12,20 +13,20 @@ function PublicHeader() {
         <nav className="main-nav">
           <ul>
             <li>
-              <a href="">Accueil</a>
+              <Link to="/">Accueil</Link>
             </li>
             <li>
-              <a href="">Réalisations</a>
+              <Link>Réalisations</Link>
             </li>
             <li>
-              <a href="">Contact</a>
+              <Link>Contact</Link>
             </li>
           </ul>
         </nav>
       </div>
-      <a href="" className="user-btn">
+      <Link className="user-btn blur" to="/login">
         <img src="./images/user.png" alt="user-img" />
-      </a>
+      </Link>
     </header>
   );
 }
