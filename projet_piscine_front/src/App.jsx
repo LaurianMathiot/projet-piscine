@@ -1,24 +1,15 @@
 import "./App.scss";
 import "./Buttons.scss";
-import Banner from "./components/public/Banner";
-import Bio from "./components/public/Bio";
-import Customers from "./components/public/Customers";
-import Indicator from "./components/public/Indicator";
-import LastWorks from "./components/public/LastWorks";
-import PublicHeader from "./components/public/PublicHeader";
-import Skills from "./components/public/Skills";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Homepage from "./pages/public/Homepage";
 
 function App() {
   return (
-    <>
-      <PublicHeader />
-      <Banner />
-      <Indicator />
-      <Bio />
-      <LastWorks />
-      <Skills />
-      <Customers />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
