@@ -60,3 +60,49 @@ input {
   border-radius: 10px;
   border: none;
 }
+
+// POP-UP
+
+.pop-msg {
+  position: absolute;
+  color: var(--darkBlue);
+  z-index: 100;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 15px;
+  box-shadow: 0 0 10px var(--shadow);
+  padding: 15px 30px;
+  width: 200px;
+  background-color: var(--white);
+}
+
+.pop-msg svg {
+  fill: var(--pink);
+}
+
+.pop-msg-error svg {
+  fill: var(--pink);
+}
+
+.pop-line {
+  position: absolute;
+  z-index: 200;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(120deg, var(--pink), var(--lightBlue));
+  width: 170px;
+  height: 3px;
+  animation: scale 3s;
+  transform-origin: 0;
+}
+
+@keyframes scale {
+  0% {
+    transform: scaleX(100%) translateX(-50%);
+  }
+  100% {
+    transform: scaleX(0%) translateX(-50%);
+  }
+}

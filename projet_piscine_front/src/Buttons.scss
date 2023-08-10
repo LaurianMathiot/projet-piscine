@@ -38,4 +38,9 @@
   background: linear-gradient(120deg, var(--pink), var(--lightBlue));
   color: var(--white);
   padding: 10px 15px;
+  transition: all 0.2s;
+
+  &:hover {
+    background: linear-gradient(120deg, var(--lightBlue), var(--pink));
+  }
 }

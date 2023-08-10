@@ -4,7 +4,7 @@ function Skills() {
   return (
     <section className="skill-section">
       <div className="container">
-        <h2>Mes solutions</h2>
+        <h2>Mes services</h2>
         <div className="skill-container">
           <div className="skill-card">
             <h3>LOGO • IDENTITÉ VISUELLE</h3>
