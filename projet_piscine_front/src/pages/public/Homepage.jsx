@@ -6,6 +6,7 @@ import LastWorks from "../../components/public/LastWorks";
 import PublicHeader from "../../components/public/PublicHeader";
 import Skills from "../../components/public/Skills";
 import "../../App.scss";
+import Footer from "../../components/public/Footer";
 
 function HomePage() {
   return (
@@ -17,6 +18,7 @@ function HomePage() {
       <LastWorks />
       <Skills />
       <Customers />
+      <Footer />
     </>
   );
 }

@@ -33,11 +33,11 @@ function Bio() {
         <div className="contact-banner">
           <p>Faites le choix du design d'exception</p>
           <p>
-            Laissez-nous transformer votre vision en une réalité visuelle
+            Laissez-moi transformer votre vision en une réalité visuelle
             époustouflante qui impressionnera et inspirera votre public.
           </p>
           <a href="" className="btn rotate-btn">
-            Nous contacter
+            Me contacter
           </a>
           <img
             className="contact-banner-img"

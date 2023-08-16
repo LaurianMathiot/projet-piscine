@@ -4,6 +4,7 @@ import Cookies from "js-cookie";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import PublicHeader from "../../components/public/PublicHeader";
+import Footer from "../../components/public/Footer";
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -38,9 +39,7 @@ const LoginPage = () => {
 
       setIsLogin("success");
 
-      setTimeout(() => {
-        navigate("/admin");
-      }, 3000);
+      navigate("/admin-dashboard");
     } else {
       setIsLogin("error");
       setWrongAdmin(true);
@@ -56,7 +55,7 @@ const LoginPage = () => {
       <section className="login-section flex">
         <div className="login-container">
           <div className="login-form-container blur">
-            <h2>Connection</h2>
+            <h2>Connexion</h2>
             <form onSubmit={HandleLoginSubmit} className="login-form">
               <div className="form-element flex">
                 <label htmlFor="username">Nom d'utilisateur</label>
@@ -97,6 +96,7 @@ const LoginPage = () => {
           </>
         )}
       </section>
+      <Footer />
     </>
   );
 };

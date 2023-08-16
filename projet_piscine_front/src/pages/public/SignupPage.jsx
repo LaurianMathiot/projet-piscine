@@ -4,6 +4,7 @@ import Cookies from "js-cookie";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import PublicHeader from "../../components/public/PublicHeader";
+import Footer from "../../components/public/Footer";
 
 const SignupPage = () => {
   return (
@@ -57,6 +58,7 @@ const SignupPage = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 };
