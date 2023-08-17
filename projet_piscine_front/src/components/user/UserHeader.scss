@@ -1,0 +1,14 @@
+.dashboard-header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 2vw;
+  border-bottom: 1px solid var(--whiteAlpha2);
+
+  & > p {
+    font-size: 1.3rem;
+
+    .dashboard-username {
+      font-weight: 700;
+    }
+  }
+}

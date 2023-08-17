@@ -6,6 +6,7 @@ import LoginPage from "./pages/public/LoginPage";
 import SignupPage from "./pages/public/SignupPage";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import MentionsLegales from "./pages/public/MentionsLegales";
+import UserDashboard from "./pages/user/UserDashboard";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
+        <Route path="/user-dashboard" element={<UserDashboard />} />
       </Routes>
     </BrowserRouter>
   );

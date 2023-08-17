@@ -1,10 +1,12 @@
 import "./LoginPage.scss";
 import { Link } from "react-router-dom";
-import Cookies from "js-cookie";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import PublicHeader from "../../components/public/PublicHeader";
 import Footer from "../../components/public/Footer";
+import jwt from "jwt-decode";
+import Cookies from "js-cookie";
+import jwtDecode from "jwt-decode";
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -26,20 +28,27 @@ const LoginPage = () => {
 
       body: JSON.stringify({ username, password }),
     });
+    const responseJson = await loginResponse.json();
 
-    if (loginResponse.status === 200) {
-      const loginData = await loginResponse.json();
+    const jwt = await responseJson.data;
+    Cookies.set("jwt", await jwt);
+    const jwtUser = Cookies.get("jwt");
+    const user = await jwtDecode(jwtUser);
 
-      const jwt = loginData.data;
-      Cookies.set("jwt", jwt);
+    console.log(user);
 
+    if (loginResponse.status === 201) {
       setInterval(() => {
         setIndexTime((indexTime) => indexTime - 1);
       }, 1000);
 
       setIsLogin("success");
 
-      navigate("/admin-dashboard");
+      if (user.data.role === 1) {
+        navigate("/admin-dashboard");
+      } else {
+        navigate("/user-dashboard");
+      }
     } else {
       setIsLogin("error");
       setWrongAdmin(true);
