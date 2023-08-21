@@ -1,5 +1,3 @@
-import "./Customers.scss";
-
 function Customers() {
   return (
     <section className="customers-section">

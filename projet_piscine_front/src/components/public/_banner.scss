@@ -13,7 +13,6 @@
       font-family: "Montserrat";
       font-size: 7rem;
       line-height: 6.5rem;
-      color: var(--);
 
       span {
         font-weight: 400;
@@ -22,7 +21,7 @@
     }
 
     p {
-      color: var(--lightBlue);
+      color: $lightBlue;
       font-weight: 400;
       //   opacity: 0.5;
       margin-top: 30px;
@@ -62,7 +61,7 @@
 
     svg {
       margin: 6px 8px 0 0;
-      fill: var(--white);
+      fill: $white;
       transform: rotate(90deg);
 
       &:hover {
@@ -73,7 +72,7 @@
     .social-separator {
       width: 50px;
       height: 1px;
-      background-color: var(--white);
+      background-color: $white;
       margin: 0 20px;
     }
   }

@@ -1,7 +1,7 @@
 .btn {
-  background: var(--white);
+  background: $white;
   display: inline-block;
-  color: var(--darkBlue);
+  color: $darkBlue;
   padding: 7px 14px;
   border-radius: 8px;
   margin-top: 30px;
@@ -18,7 +18,7 @@
   border-radius: 0;
   padding: 10px 15px;
   transition: all 0.2s ease-in-out;
-  border: 0.5px solid var(--white);
+  border: 0.5px solid $white;
 
   &:first-child {
     border-radius: 8px 0 0 8px;
@@ -30,18 +30,18 @@
 
   &:hover {
     background: none;
-    color: var(--white);
+    color: $white;
   }
 }
 
 .gradient-btn {
-  background: linear-gradient(120deg, var(--pink), var(--lightBlue));
-  color: var(--white);
+  background: linear-gradient(120deg, $pink, $lightBlue);
+  color: $white;
   padding: 10px 15px;
   transition: all 0.2s;
 
   &:hover {
-    background: linear-gradient(120deg, var(--lightBlue), var(--pink));
+    background: linear-gradient(120deg, $lightBlue), $pink;
   }
 }
 

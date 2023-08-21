@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import "./PublicHeader.scss";
 
 function PublicHeader() {
   return (

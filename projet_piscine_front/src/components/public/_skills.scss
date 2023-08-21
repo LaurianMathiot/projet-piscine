@@ -10,7 +10,7 @@
       gap: 20px;
 
       .skill-card {
-        background: linear-gradient(217deg, var(--pink), var(--blue));
+        background: linear-gradient(217deg, $pink, $blue);
         height: 180px;
         border-radius: 15px;
         padding: 30px;
@@ -24,15 +24,15 @@
         }
 
         &:nth-child(2) {
-          background: linear-gradient(-217deg, var(--pink), var(--lightBlue));
+          background: linear-gradient(-217deg, $pink, $lightBlue);
         }
 
         &:nth-child(3) {
-          background: linear-gradient(-60deg, var(--pink), var(--lightBlue));
+          background: linear-gradient(-60deg, $pink, $lightBlue);
         }
 
         &:nth-child(4) {
-          background: linear-gradient(60deg, var(--pink), var(--blue));
+          background: linear-gradient(60deg, $pink, $blue);
         }
 
         .skill-card-plus {
@@ -44,7 +44,7 @@
           }
 
           svg {
-            fill: var(--white);
+            fill: $white;
           }
         }
       }

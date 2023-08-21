@@ -1,4 +1,3 @@
-import "./LoginPage.scss";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -30,14 +29,12 @@ const LoginPage = () => {
     });
     const responseJson = await loginResponse.json();
 
-    const jwt = await responseJson.data;
-    Cookies.set("jwt", await jwt);
-    const jwtUser = Cookies.get("jwt");
-    const user = await jwtDecode(jwtUser);
-
-    console.log(user);
-
     if (loginResponse.status === 201) {
+      const jwt = await responseJson.data;
+      Cookies.set("jwt", await jwt);
+      const jwtUser = Cookies.get("jwt");
+      const user = await jwtDecode(jwtUser);
+
       setInterval(() => {
         setIndexTime((indexTime) => indexTime - 1);
       }, 1000);

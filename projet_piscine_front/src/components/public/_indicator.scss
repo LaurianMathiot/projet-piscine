@@ -2,7 +2,7 @@
   display: grid;
   gap: 5vw;
   grid-template-columns: repeat(3, 1fr);
-  background-color: var(--darkBlueAlpha);
+  background-color: $darkBlueAlpha;
   padding: 7vh 20vw;
   margin: auto;
 
@@ -14,8 +14,8 @@
     align-items: center;
     height: 12vw;
     width: 12vw;
-    background-color: var(--darkBlueAlpha);
-    border: 1px solid var(--whiteAlpha);
+    background-color: $darkBlueAlpha;
+    border: 1px solid $whiteAlpha;
     border-radius: 20px;
 
     & > :first-child {

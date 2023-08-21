@@ -1,5 +1,3 @@
-import "./Bio.scss";
-
 function Bio() {
   return (
     <section className="bio-section">

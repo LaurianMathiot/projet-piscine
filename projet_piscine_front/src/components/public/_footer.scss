@@ -1,11 +1,12 @@
 .main-footer {
-  border-top: 1px solid var(--whiteAlpha2);
+  border-top: 1px solid $whiteAlpha2;
   justify-content: center;
   align-items: center;
-  padding: 3vh;
+  padding: 0 3vh;
+  height: 8vh;
 
   a:hover {
-    color: var(--lightBlue);
+    color: $lightBlue;
   }
 
   img {

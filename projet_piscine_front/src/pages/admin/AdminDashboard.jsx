@@ -1,4 +1,3 @@
-import "./AdminDashboard.scss";
 import Footer from "../../components/public/Footer";
 import UserHeader from "../../components/user/UserHeader";
 import AdminAside from "../../components/admin/AdminAside";
@@ -10,9 +9,9 @@ function AdminDashboard() {
       <UserHeader />
       <section className="dashboard flex">
         <AdminAside />
-        <div className="dashboard-main-container">
+        <main className="dashboard-main-container">
           <UploadForm />
-        </div>
+        </main>
       </section>
       <Footer />
     </>

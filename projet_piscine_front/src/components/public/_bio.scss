@@ -4,8 +4,8 @@
   padding: 5vh;
   background-image: radial-gradient(
     closest-corner at 80% 40%,
-    var(--blue),
-    var(--darkBlue) 105%
+    $blue,
+    $darkBlue 105%
   );
 
   .bio-container {
@@ -33,7 +33,7 @@
       img {
         width: 150px;
         position: absolute;
-        filter: drop-shadow(50px 40px 20px var(--shadow));
+        filter: drop-shadow(50px 40px 20px $shadow);
         transition: all 0.2s ease-in-out;
       }
 
@@ -81,12 +81,7 @@
   }
 
   .contact-banner {
-    background: linear-gradient(
-      120deg,
-      var(--blue),
-      var(--pink) 60%,
-      var(--lightBlue)
-    );
+    background: linear-gradient(120deg, $blue, $pink 60%, $lightBlue);
     padding: 3vh;
     border-radius: 20px;
     position: relative;

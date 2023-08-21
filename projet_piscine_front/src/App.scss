@@ -1,109 +1,17 @@
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style-type: none;
-  font-family: "Montserrat";
-}
-
-:root {
-  --white: white;
-  --whiteAlpha: rgba(255, 255, 255, 0.066);
-  --whiteAlpha2: rgba(255, 255, 255, 0.182);
-  --blue: rgb(37, 19, 115);
-  --lightBlue: #09c0ef;
-  --darkBlue: rgb(0, 0, 22);
-  --darkBlueAlpha: rgba(0, 0, 22, 0.18);
-  --shadow: rgba(0, 0, 22, 0.629);
-  --pink: #ff00c2;
-}
-
-body {
-  color: var(--white);
-  background-image: radial-gradient(
-    closest-corner at 68% 500px,
-    var(--blue),
-    var(--darkBlue) 75%
-  );
-  margin: auto;
-}
-
-a {
-  color: var(--white);
-}
-
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 5vh 0;
-}
-
-strong {
-  font-family: "Restora";
-  font-size: 1rem;
-  margin: 0 3px;
-}
-
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.blur {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
-
-input {
-  padding: 10px;
-  border-radius: 10px;
-  border: none;
-}
-
-// POP-UP
-
-.pop-msg {
-  position: absolute;
-  color: var(--darkBlue);
-  z-index: 100;
-  bottom: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 15px;
-  box-shadow: 0 0 10px var(--shadow);
-  padding: 15px 30px;
-  width: 200px;
-  background-color: var(--white);
-}
-
-.pop-msg svg {
-  fill: var(--pink);
-}
-
-.pop-msg-error svg {
-  fill: var(--pink);
-}
-
-.pop-line {
-  position: absolute;
-  z-index: 200;
-  bottom: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: linear-gradient(120deg, var(--pink), var(--lightBlue));
-  width: 170px;
-  height: 3px;
-  animation: scale 3s;
-  transform-origin: 0;
-}
-
-@keyframes scale {
-  0% {
-    transform: scaleX(100%) translateX(-50%);
-  }
-  100% {
-    transform: scaleX(0%) translateX(-50%);
-  }
-}
+@import "./base";
+@import "./buttons";
+@import "./components/admin/adminAside";
+@import "./components/admin/uploadForm";
+@import "./components/public/banner";
+@import "./components/public/bio";
+@import "./components/public/customers";
+@import "./components/public/footer";
+@import "./components/public/indicator";
+@import "./components/public/lastWorks";
+@import "./components/public/publicHeader";
+@import "./components/public/skills";
+@import "./components/user/userHeader";
+@import "./pages/admin/adminDashboard";
+@import "./pages/public/mentionsLegales";
+@import "./pages/public/signupPage";
+@import "./pages/public/loginPage";

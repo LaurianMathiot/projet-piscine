@@ -1,5 +1,3 @@
-import "./LastWorks.scss";
-
 function LastWorks() {
   return (
     <section className="last-works">

@@ -1,5 +1,3 @@
-import "./Skills.scss";
-
 function Skills() {
   return (
     <section className="skill-section">

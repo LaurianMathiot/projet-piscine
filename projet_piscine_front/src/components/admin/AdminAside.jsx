@@ -1,5 +1,3 @@
-import "./AdminAside.scss";
-
 function AdminAside() {
   return (
     <aside className="dashboard-aside">

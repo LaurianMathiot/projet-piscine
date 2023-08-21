@@ -1,8 +1,9 @@
 .dashboard-header {
   justify-content: space-between;
   align-items: center;
-  padding: 2vh 2vw;
-  border-bottom: 1px solid var(--whiteAlpha2);
+  height: 8vh;
+  padding: 0 2vw;
+  border-bottom: 1px solid $whiteAlpha2;
 
   & > p {
     font-size: 1.3rem;

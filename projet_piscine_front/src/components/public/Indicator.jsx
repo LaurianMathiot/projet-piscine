@@ -1,5 +1,3 @@
-import "./Indicator.scss";
-
 function Indicator() {
   return (
     <section className="indicator-section">

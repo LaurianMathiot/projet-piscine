@@ -1,9 +1,9 @@
 .login-section {
-  height: 91vh;
+  height: 100vh - 9vh;
   background-image: radial-gradient(
     closest-corner at 68% 500px,
-    var(--blue),
-    var(--darkBlue) 75%
+    $blue,
+    $darkBlue 75%
   );
   background-image: url(../../../public/images/3D_flower.png);
   background-size: 65%;
