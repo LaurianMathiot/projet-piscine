@@ -1,29 +1,41 @@
 import { useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import jwtDecode from "jwt-decode";
 
-function UploadForm() {
+const UploadForm = () => {
+  const [allClient, setAllclient] = useState([]);
   const navigate = useNavigate();
+  const token = Cookies.get("jwt");
+
+  const allClients = async () => {
+    const fetchOption = {
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+    };
+    const fetchClient = await fetch(
+      "http://localhost:3020/api/clients/",
+      fetchOption
+    );
+    const responseJson = await fetchClient.json();
+    setAllclient(responseJson.data);
+  };
 
   const handleUploadFile = async (event) => {
     event.preventDefault();
 
     const fileData = {
       name: event.target.filename.value,
+      filetype: parseInt(event.target.fileType.value),
+      client: parseInt(event.target.client.value),
     };
 
     const formData = new FormData();
 
     formData.append("file", event.target.file.files[0]);
     formData.append("data", JSON.stringify(fileData));
-
-    console.log(event.target.file);
-    // on fait l'appel à l'api
-    // avec une requête POST
-    // en lui passant les données
-    // en json dans la clé "body"
-    // on précise qu'on envoie un json, via le header
 
     const token = Cookies.get("jwt");
 
@@ -38,13 +50,18 @@ function UploadForm() {
 
     const responseCreateJs = await responseCreate.json();
 
-    console.log(responseCreateJs);
+    console.log(responseCreate);
+
+    if (responseCreate.status === 201) {
+      navigate("/admin-dashboard/files");
+    }
   };
 
   useEffect(() => {
     if (!Cookies.get("jwt")) {
       navigate("/login");
     }
+    allClients();
   }, []);
 
   return (
@@ -62,18 +79,22 @@ function UploadForm() {
           //   accept="image/png, image/jpeg"
         />
       </div>
-      <select name="file-type" id="type-select" className="btn">
+      <select name="fileType" id="type-select" className="btn">
         <option value="">Type de fichier</option>
-        <option value="devis">Devis</option>
-        <option value="facture">Facture</option>
-        <option value="création">Création</option>
+        <option value="1">Devis</option>
+        <option value="2">Facture</option>
+        <option value="3">Création</option>
       </select>
       <select name="client" id="client-select" className="btn">
         <option value="">Client</option>
+        {allClient.length !== 0 &&
+          allClient.map((client) => {
+            return <option value={client.id}>{client.business}</option>;
+          })}
       </select>
       <input type="submit" className="submit-btn btn gradient-btn" />
     </form>
   );
-}
+};
 
 export default UploadForm;

@@ -3,7 +3,6 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import PublicHeader from "../../components/public/PublicHeader";
 import Footer from "../../components/public/Footer";
-import jwt from "jwt-decode";
 import Cookies from "js-cookie";
 import jwtDecode from "jwt-decode";
 

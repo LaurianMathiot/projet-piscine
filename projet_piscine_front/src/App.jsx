@@ -6,6 +6,7 @@ import SignupPage from "./pages/public/SignupPage";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import MentionsLegales from "./pages/public/MentionsLegales";
 import UserDashboard from "./pages/user/UserDashboard";
+import AdminDashboardFiles from "./pages/admin/AdminDashboardFiles";
 
 function App() {
   return (
@@ -17,6 +18,10 @@ function App() {
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
         <Route path="/user-dashboard" element={<UserDashboard />} />
+        <Route
+          path="/admin-dashboard/files"
+          element={<AdminDashboardFiles />}
+        />
       </Routes>
     </BrowserRouter>
   );
