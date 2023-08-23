@@ -7,6 +7,7 @@ import AdminDashboard from "./pages/admin/AdminDashboard";
 import MentionsLegales from "./pages/public/MentionsLegales";
 import UserDashboard from "./pages/user/UserDashboard";
 import AdminDashboardFiles from "./pages/admin/AdminDashboardFiles";
+import AdminDashboardUsers from "./pages/admin/AdminDashboardUsers";
 
 function App() {
   return (
@@ -21,6 +22,10 @@ function App() {
         <Route
           path="/admin-dashboard/files"
           element={<AdminDashboardFiles />}
+        />
+        <Route
+          path="/admin-dashboard/users"
+          element={<AdminDashboardUsers />}
         />
       </Routes>
     </BrowserRouter>

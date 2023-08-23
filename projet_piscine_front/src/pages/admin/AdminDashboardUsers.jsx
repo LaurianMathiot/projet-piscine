@@ -1,21 +1,19 @@
 import AdminAside from "../../components/admin/AdminAside";
-import FilesGestionnary from "../../components/admin/FilesGestionnary";
-import ReviewsAside from "../../components/admin/ReviewsAside";
+import UsersGestionnary from "../../components/admin/UsersGestionnary";
 import Footer from "../../components/public/Footer";
 import UserHeader from "../../components/user/UserHeader";
 
-function AdminDashboardFiles() {
+function AdminDashboardUsers() {
   return (
     <>
       <UserHeader />
       <section className="dashboard flex">
         <AdminAside />
-        <FilesGestionnary />
-        <ReviewsAside />
+        <UsersGestionnary />
       </section>
       <Footer />
     </>
   );
 }
 
-export default AdminDashboardFiles;
+export default AdminDashboardUsers;

@@ -15,6 +15,7 @@ $darkBlue: rgb(0, 0, 22);
 $darkBlueAlpha: rgba(0, 0, 22, 0.18);
 $shadow: rgba(0, 0, 22, 0.629);
 $pink: #ff00c2;
+$red: rgb(221, 18, 18);
 
 body {
   color: $white;
@@ -24,6 +25,14 @@ body {
     $darkBlue 75%
   );
   margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 300;
 }
 
 a {

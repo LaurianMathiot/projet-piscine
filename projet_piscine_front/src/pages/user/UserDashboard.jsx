@@ -1,5 +1,6 @@
 import UserAside from "../../components/admin/UserAside";
 import Footer from "../../components/public/Footer";
+import ShowFiles from "../../components/user/ShowFiles";
 import UserHeader from "../../components/user/UserHeader";
 
 function UserDashboard() {
@@ -8,7 +9,7 @@ function UserDashboard() {
       <UserHeader />
       <section className="dashboard flex">
         <UserAside />
-        <main className="dashboard-main-container"></main>
+        <ShowFiles />
       </section>
       <Footer />
     </>

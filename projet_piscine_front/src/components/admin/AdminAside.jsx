@@ -32,7 +32,7 @@ function AdminAside() {
             </Link>
           </li>
           <li className="flex users">
-            <Link className="flex">
+            <Link className="flex" to="/admin-dashboard/users">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="auto"

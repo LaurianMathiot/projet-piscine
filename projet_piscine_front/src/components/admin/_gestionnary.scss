@@ -1,0 +1,26 @@
+.dashboard-files {
+  align-items: start;
+  height: 100%;
+
+  h3 {
+    margin: 20px 0 40px 20px;
+  }
+
+  .element {
+    align-items: center;
+    padding: 15px 30px;
+    margin: 15px;
+    border-radius: 15px;
+
+    h5 {
+      font-weight: 500;
+    }
+
+    .files-btns-container {
+      align-items: center;
+      > :first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+}
