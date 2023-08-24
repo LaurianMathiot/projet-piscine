@@ -8,7 +8,7 @@
 
   .element {
     align-items: center;
-    padding: 15px 30px;
+    padding: 15px 15px 15px 30px;
     margin: 15px;
     border-radius: 15px;
 
@@ -19,7 +19,7 @@
     .files-btns-container {
       align-items: center;
       > :first-child {
-        margin-right: 10px;
+        margin-right: 20px;
       }
     }
   }

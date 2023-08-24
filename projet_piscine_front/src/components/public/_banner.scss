@@ -77,3 +77,13 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .text-intro {
+    top: 15%;
+  }
+
+  .banner-img {
+    top: 75% !important;
+  }
+}

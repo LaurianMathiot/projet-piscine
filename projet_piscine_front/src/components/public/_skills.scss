@@ -1,4 +1,5 @@
 .skill-section {
+  padding: 0 5vh;
   .container {
     h2 {
       margin-bottom: 4vh;
@@ -47,6 +48,23 @@
             fill: $white;
           }
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .skill-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+
+    .skill-card {
+      height: 120px !important;
+      &:nth-child(3) {
+        background: linear-gradient(-60deg, $pink, $blue) !important;
+      }
+
+      &:nth-child(4) {
+        background: linear-gradient(60deg, $pink, $lightBlue) !important;
       }
     }
   }

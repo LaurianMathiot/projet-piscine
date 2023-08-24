@@ -67,6 +67,7 @@
   margin: 0;
   height: 35px;
   background-color: $red;
+  border: 1px solid $red;
 
   svg {
     fill: $white;
@@ -74,6 +75,7 @@
   }
 
   &:hover {
+    background-color: $darkred;
     svg {
       transform: rotate(15deg);
     }
@@ -85,11 +87,12 @@
   align-items: center;
   margin: 0;
   font-size: 0.9rem;
-  min-height: 35px;
+  height: 35px;
   padding: 0 10px;
+  border: 1px solid $white;
 
   &:hover {
-    background: linear-gradient(120deg, $lightBlue, $pink);
+    background: none;
     color: $white;
   }
 }

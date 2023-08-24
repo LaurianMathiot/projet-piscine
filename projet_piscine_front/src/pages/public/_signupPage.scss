@@ -1,5 +1,5 @@
 .signup-section {
-  height: 100vh - 9vh;
+  min-height: 100vh - 9vh;
   background-image: radial-gradient(
     closest-corner at 68% 500px,
     $blue,
@@ -15,17 +15,21 @@
   padding-left: 15vw;
 
   .signup-form-container {
-    padding: 30px 50px;
+    margin-top: 5vh;
+    padding: 20px;
     border-radius: 30px;
+    width: 410px;
 
     h2 {
       margin-bottom: 4vh;
+      text-align: center;
     }
 
     .signup-form {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
+      margin: 0;
 
       .form-element {
         flex-direction: column;
@@ -46,12 +50,38 @@
     }
   }
   .signup-redirection {
-    margin-top: 8vh;
+    margin-top: 4vh;
     text-align: center;
 
     .redirection-btn {
       margin-top: 10px;
       display: inline-block;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .signup-section {
+    align-items: center;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .signup-form-container {
+    max-width: 70vw;
+
+    h2 {
+      margin-bottom: 1vh !important;
+    }
+
+    .signup-form {
+      max-width: 250px;
+      gap: 10px !important;
+      .form-element {
+        grid-column: 1/3;
+        margin: auto;
+      }
     }
   }
 }

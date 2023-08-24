@@ -73,10 +73,6 @@
         z-index: 0;
         animation: float 10s ease-in-out infinite;
       }
-
-      &:hover img {
-        animation: none;
-      }
     }
   }
 
@@ -141,5 +137,11 @@
   }
   100% {
     transform: translatex(0px);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .bio-imgs-container {
+    transform: scale(0.6);
   }
 }

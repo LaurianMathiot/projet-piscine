@@ -15,7 +15,7 @@ function HomePage() {
       <Banner />
       <Indicator />
       <Bio />
-      <LastWorks />
+      {/* <LastWorks /> */}
       <Skills />
       <Customers />
       <Footer />

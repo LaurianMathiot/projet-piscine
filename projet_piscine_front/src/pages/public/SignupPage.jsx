@@ -88,7 +88,9 @@ const SignupPage = () => {
                 <input type="email" name="email" />
               </div>
               <div className="form-element flex">
-                <label htmlFor="phone">Téléphone</label>
+                <label htmlFor="phone">
+                  Téléphone<span>*</span>
+                </label>
                 <input type="number" name="phone" />
               </div>
               <input

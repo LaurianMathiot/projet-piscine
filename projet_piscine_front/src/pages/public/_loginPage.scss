@@ -15,15 +15,17 @@
   padding-left: 15vw;
 
   .login-form-container {
-    padding: 30px 50px;
+    padding: 20px;
     border-radius: 30px;
 
     h2 {
-      margin-bottom: 4vh;
+      text-align: center;
+      margin-bottom: 2vh;
     }
 
     .login-form {
       text-align: center;
+      min-width: 170px;
 
       .form-element {
         flex-direction: column;
@@ -43,3 +45,5 @@
     }
   }
 }
+
+// @media screen and (max-width: 50em);

@@ -1,6 +1,6 @@
 .main-footer {
   border-top: 1px solid $whiteAlpha2;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 0 3vh;
   height: 8vh;
@@ -13,5 +13,27 @@
     height: 20px;
     width: auto;
     margin: 0 10px 2px;
+  }
+
+  .footer-networks {
+    gap: 10px;
+
+    svg {
+      fill: $white;
+    }
+
+    svg:hover {
+      fill: $lightBlue;
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .main-footer,
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    padding: 10px;
   }
 }

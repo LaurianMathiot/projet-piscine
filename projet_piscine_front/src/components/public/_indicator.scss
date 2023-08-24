@@ -1,19 +1,17 @@
 .indicator-section {
-  display: grid;
-  gap: 5vw;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: center;
+  gap: 8vw;
   background-color: $darkBlueAlpha;
-  padding: 7vh 20vw;
-  margin: auto;
+  padding: 7vh 0;
 
   .indicator-box {
     display: flex;
-    margin: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 12vw;
-    width: 12vw;
+    height: 200px;
+    width: 200px;
     background-color: $darkBlueAlpha;
     border: 1px solid $whiteAlpha;
     border-radius: 20px;
@@ -26,5 +24,11 @@
     p {
       font-size: 0.8rem;
     }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .indicator-section {
+    padding: 4vh;
   }
 }
