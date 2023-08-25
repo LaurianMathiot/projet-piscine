@@ -1,21 +1,19 @@
 import UserAside from "../../components/user/UserAside";
 import Footer from "../../components/public/Footer";
-import ShowFiles from "../../components/user/ShowFiles";
 import UserHeader from "../../components/user/UserHeader";
-import ReviewsAside from "../../components/user/ReviewsAside";
+import ShowBills from "../../components/user/ShowBills";
 
-function UserDashboard() {
+function UserDashboardBills() {
   return (
     <>
       <UserHeader />
       <section className="dashboard flex">
         <UserAside />
-        <ShowFiles />
-        <ReviewsAside />
+        <ShowBills />
       </section>
       <Footer />
     </>
   );
 }
 
-export default UserDashboard;
+export default UserDashboardBills;

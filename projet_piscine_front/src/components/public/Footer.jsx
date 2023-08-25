@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="main-footer flex">
       <div className="flex footer-links">
-        <img src="./images/logo_lm.svg" alt="logo-lm" />
+        <img src="/images/logo_lm.svg" alt="logo-lm" />
         <p>Copyright © {new Date().getFullYear()}&nbsp;</p>
         <p>
           <Link to="/">laurianmathiot.fr</Link> |{" "}

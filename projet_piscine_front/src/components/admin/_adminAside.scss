@@ -19,7 +19,7 @@
     }
 
     &:first-child {
-      margin-top: 200px;
+      margin-top: 100px;
     }
 
     svg {
@@ -29,7 +29,7 @@
     }
 
     &:nth-child(2) {
-      margin-top: 70px;
+      margin-top: 20px;
       border-top: 1px solid $whiteAlpha2;
     }
   }

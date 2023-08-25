@@ -8,6 +8,8 @@ import MentionsLegales from "./pages/public/MentionsLegales";
 import UserDashboard from "./pages/user/UserDashboard";
 import AdminDashboardFiles from "./pages/admin/AdminDashboardFiles";
 import AdminDashboardUsers from "./pages/admin/AdminDashboardUsers";
+import UserDashboardBills from "./pages/user/UserDashboardBills";
+import UserDashboardUpdate from "./pages/user/UserDashboardUpdate";
 
 function App() {
   return (
@@ -26,6 +28,11 @@ function App() {
         <Route
           path="/admin-dashboard/users"
           element={<AdminDashboardUsers />}
+        />
+        <Route path="/user-dashboard/bills" element={<UserDashboardBills />} />
+        <Route
+          path="/user-dashboard/update"
+          element={<UserDashboardUpdate />}
         />
       </Routes>
     </BrowserRouter>

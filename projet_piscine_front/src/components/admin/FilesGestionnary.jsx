@@ -2,7 +2,6 @@ import Cookies from "js-cookie";
 import { useEffect, useState } from "react";
 import jwtDecode from "jwt-decode";
 import { Link, useNavigate } from "react-router-dom";
-import ReviewsAside from "./ReviewsAside";
 
 function FilesGestionnary() {
   const [files, setFiles] = useState([]);

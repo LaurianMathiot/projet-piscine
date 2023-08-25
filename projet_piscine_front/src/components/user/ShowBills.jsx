@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import jwtDecode from "jwt-decode";
 import { Link, useNavigate } from "react-router-dom";
 
-function ShowFiles() {
+function ShowBills() {
   const [files, setFiles] = useState([]);
   const [findClient, setFindClient] = useState([]);
   const navigate = useNavigate();
@@ -45,27 +45,49 @@ function ShowFiles() {
   }, []);
 
   return (
-    <main className="dashboard-main-container dashboard-files">
-      <h3>Fichiers</h3>
-      {files.map(
-        (file) =>
-          findClient.id === file.clientId &&
-          file.filetypeId === 3 && (
-            <article className="flex element blur">
-              <h5>{file.name}</h5>
-              <a
-                href={file.file}
-                target="_blank"
-                className="btn download-btn"
-                download
-              >
-                Télécharger
-              </a>
-            </article>
-          )
-      )}
+    <main className="dashboard-main-container dashboard-files dashboard-bills ">
+      <div>
+        <h3>Devis</h3>
+        {files.map(
+          (file) =>
+            findClient.id === file.clientId &&
+            file.filetypeId === 1 && (
+              <article className="flex element blur">
+                <h5>{file.name}</h5>
+                <a
+                  href={file.file}
+                  target="_blank"
+                  className="btn download-btn"
+                  download
+                >
+                  Télécharger
+                </a>
+              </article>
+            )
+        )}
+      </div>
+      <div className="factures">
+        <h3>Factures</h3>
+        {files.map(
+          (file) =>
+            findClient.id === file.clientId &&
+            file.filetypeId === 2 && (
+              <article className="flex element blur">
+                <h5>{file.name}</h5>
+                <a
+                  href={file.file}
+                  target="_blank"
+                  className="btn download-btn"
+                  download
+                >
+                  Télécharger
+                </a>
+              </article>
+            )
+        )}
+      </div>
     </main>
   );
 }
 
-export default ShowFiles;
+export default ShowBills;

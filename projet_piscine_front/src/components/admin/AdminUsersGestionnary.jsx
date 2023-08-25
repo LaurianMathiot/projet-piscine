@@ -2,6 +2,7 @@ import Cookies from "js-cookie";
 import { useEffect, useState } from "react";
 import jwtDecode from "jwt-decode";
 import { Link, useNavigate } from "react-router-dom";
+import ClientInformation from "./ClientInformation";
 
 function UsersGestionnary() {
   const [users, setUsers] = useState([]);
@@ -62,8 +63,11 @@ function UsersGestionnary() {
     <main className="dashboard-main-container dashboard-files">
       <h3>Utilisateurs</h3>
       {users.map((user) => (
-        <article className="flex element blur">
-          <h5>{user.username}</h5>
+        <article className="flex element user-infos blur">
+          <div className="flex">
+            <h5>{user.username}</h5>
+            {<ClientInformation user={user} />}
+          </div>
           <button
             className="btn delete-btn"
             onClick={() => handleDeleteUser(user.id)}

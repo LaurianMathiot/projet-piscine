@@ -3,7 +3,7 @@
   height: 100%;
 
   h3 {
-    margin: 20px 0 40px 20px;
+    margin: 20px 0;
   }
 
   .element {
@@ -14,12 +14,30 @@
 
     h5 {
       font-weight: 500;
+      font-size: 1rem;
+      margin-right: 30px;
+      min-width: 100px;
+      text-align: left;
     }
 
     .files-btns-container {
       align-items: center;
       > :first-child {
         margin-right: 20px;
+      }
+    }
+
+    .client-infos {
+      text-align: left;
+      gap: 20px;
+      color: $whiteAlpha3;
+
+      .business {
+        width: 150px;
+      }
+
+      .email {
+        width: 350px;
       }
     }
   }

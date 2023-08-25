@@ -32,7 +32,7 @@ function UserAside() {
             </Link>
           </li>
           <li className="flex users">
-            <Link className="flex" to="/user-dashboard/profil-update">
+            <Link className="flex" to="/user-dashboard/update">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="auto"

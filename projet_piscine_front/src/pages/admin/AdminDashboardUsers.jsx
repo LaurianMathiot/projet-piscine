@@ -1,5 +1,5 @@
 import AdminAside from "../../components/admin/AdminAside";
-import UsersGestionnary from "../../components/admin/UsersGestionnary";
+import AdminUsersGestionnary from "../../components/admin/AdminUsersGestionnary";
 import Footer from "../../components/public/Footer";
 import UserHeader from "../../components/user/UserHeader";
 
@@ -9,7 +9,7 @@ function AdminDashboardUsers() {
       <UserHeader />
       <section className="dashboard flex">
         <AdminAside />
-        <UsersGestionnary />
+        <AdminUsersGestionnary />
       </section>
       <Footer />
     </>
