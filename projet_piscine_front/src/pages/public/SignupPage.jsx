@@ -40,7 +40,7 @@ const SignupPage = () => {
 
       setInterval(() => {
         setIndexTime((indexTime) => indexTime - 1);
-      }, 1000);
+      }, 3000);
 
       setIsSignup("success");
 

@@ -45,8 +45,8 @@ function ShowBills() {
   }, []);
 
   return (
-    <main className="dashboard-main-container dashboard-files dashboard-bills ">
-      <div>
+    <main className="dashboard-main-container dashboard-files dashboard-bills flex">
+      <div className="estimates">
         <h3>Devis</h3>
         {files.map(
           (file) =>
@@ -66,7 +66,7 @@ function ShowBills() {
             )
         )}
       </div>
-      <div className="factures">
+      <div className="bills">
         <h3>Factures</h3>
         {files.map(
           (file) =>

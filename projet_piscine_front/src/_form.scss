@@ -6,15 +6,21 @@ form {
   border-radius: 20px;
 
   h3 {
+    margin: 0;
     margin-bottom: 40px;
     font-weight: 700;
     text-transform: uppercase;
   }
 
-  .filename-input {
+  .label-input {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 30px;
+    align-items: center;
+
+    .email-input {
+      min-width: 250px;
+    }
   }
 
   textarea {

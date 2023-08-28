@@ -1,12 +1,24 @@
 .dashboard-bills {
-  max-width: 500px;
-  margin: auto;
-}
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-h3 {
-  margin-right: 40px;
-}
+  h3 {
+    margin-top: 40px;
+  }
 
-.factures {
-  margin-top: 8vh;
+  .estimates,
+  .bills {
+    width: 100%;
+    min-height: 50%;
+    text-align: center;
+  }
+
+  .bills {
+    border-top: 1px solid $whiteAlpha2;
+  }
+  .element {
+    width: 500px;
+    margin: auto;
+  }
 }
