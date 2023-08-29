@@ -1,6 +1,6 @@
 .dashboard-bills {
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 
   h3 {
@@ -10,7 +10,7 @@
   .estimates,
   .bills {
     width: 100%;
-    min-height: 50%;
+    height: 50%;
     text-align: center;
   }
 

@@ -5,8 +5,27 @@ import { Link, useNavigate } from "react-router-dom";
 
 function FilesGestionnary() {
   const [files, setFiles] = useState([]);
+  const [allClient, setAllclient] = useState([]);
   const [refreshKey, setRefreshKey] = useState(0);
+  const [filterFiles, setFilterFiles] = useState([]);
+
   const navigate = useNavigate();
+  const token = Cookies.get("jwt");
+
+  const allClients = async () => {
+    const fetchOption = {
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+    };
+    const fetchClient = await fetch(
+      "http://localhost:3020/api/clients/",
+      fetchOption
+    );
+    const responseJson = await fetchClient.json();
+    setAllclient(responseJson.data);
+  };
 
   const fetchFiles = async () => {
     const response = await fetch("http://localhost:3020/api/files");
@@ -32,9 +51,20 @@ function FilesGestionnary() {
         },
       }
     );
-
     const responseDeleteJs = await responseDelete.json();
     setRefreshKey((prevKey) => prevKey + 1);
+  };
+  const handleChange = (event, files) => {
+    let result;
+    if (parseInt(event.target.value) === 0) {
+      result = files;
+    } else {
+      result = files.filter(
+        (file) => file.clientId === parseInt(event.target.value)
+      );
+    }
+
+    setFilterFiles(result);
   };
 
   useEffect(() => {
@@ -47,17 +77,29 @@ function FilesGestionnary() {
       navigate("/login");
       return;
     }
+    allClients();
 
     // on décode le jwt
     const user = jwtDecode(jwt);
-
     fetchFiles();
-  }, [refreshKey]);
+  }, [files]);
 
   return (
     <main className="dashboard-main-container dashboard-files">
       <h3>Fichiers</h3>
-      {files.map((file) => (
+      <form onChange={(event) => handleChange(event, files)}>
+        <select name="client" id="client-select" className="btn">
+          <option value="nothing" selected disabled>
+            - Choisissez une option -
+          </option>
+          <option value="0">Tout voir</option>
+          {allClient.length !== 0 &&
+            allClient.map((client) => {
+              return <option value={client.id}>{client.business}</option>;
+            })}
+        </select>
+      </form>
+      {filterFiles.map((file) => (
         <article className="flex element blur">
           <h5>{file.name}</h5>
           <div className="files-btns-container flex">

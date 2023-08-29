@@ -10,12 +10,14 @@ import AdminDashboardFiles from "./pages/admin/AdminDashboardFiles";
 import AdminDashboardUsers from "./pages/admin/AdminDashboardUsers";
 import UserDashboardBills from "./pages/user/UserDashboardBills";
 import UserDashboardUpdate from "./pages/user/UserDashboardUpdate";
+import Portfolio from "./pages/public/Portfolio";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/mentions-legales" element={<MentionsLegales />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />

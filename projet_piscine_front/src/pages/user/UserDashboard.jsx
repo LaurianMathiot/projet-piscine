@@ -11,7 +11,6 @@ function UserDashboard() {
       <section className="dashboard flex">
         <UserAside />
         <ShowFiles />
-        <ReviewsAside />
       </section>
       <Footer />
     </>

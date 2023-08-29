@@ -84,6 +84,7 @@ const UploadForm = () => {
         <option value="1">Devis</option>
         <option value="2">Facture</option>
         <option value="3">Création</option>
+        <option value="4">Publication</option>
       </select>
       <select name="client" id="client-select" className="btn">
         <option value="">Client</option>

@@ -11,7 +11,6 @@ function AdminDashboardFiles() {
       <section className="dashboard flex">
         <AdminAside />
         <FilesGestionnary />
-        <ReviewsAside />
       </section>
       <Footer />
     </>

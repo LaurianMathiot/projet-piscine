@@ -1,7 +1,14 @@
 .dashboard {
-  height: 100vh - 17vh;
+  align-items: start;
   .dashboard-main-container {
     width: 100%;
+    min-height: 72vh;
     text-align: center;
+    border-left: 1px solid $whiteAlpha2;
+    border-right: 1px solid $whiteAlpha2;
   }
+}
+
+.upload-form {
+  margin-top: 15vh;
 }

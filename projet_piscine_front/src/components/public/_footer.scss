@@ -3,27 +3,53 @@
   justify-content: space-around;
   align-items: center;
   padding: 0 3vh;
-  height: 8vh;
+  height: 18vh;
 
   a:hover {
     color: $lightBlue;
   }
 
   img {
-    height: 20px;
+    height: 40px;
     width: auto;
-    margin: 0 10px 2px;
+
+    & + p {
+      margin: 10px 0;
+    }
   }
 
-  .footer-networks {
-    gap: 10px;
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    position: relative;
 
-    svg {
-      fill: $white;
+    &::before {
+      content: "";
+      height: 100%;
+      width: 1px;
+      background: linear-gradient(120deg, $pink, $lightBlue);
+      position: absolute;
+      left: 0;
+      top: 0;
     }
 
-    svg:hover {
-      fill: $lightBlue;
+    > :first-child {
+      margin-bottom: 10px;
+    }
+
+    .footer-networks {
+      margin-top: 20px;
+      gap: 10px;
+
+      svg {
+        fill: $white;
+      }
+
+      svg:hover {
+        fill: $lightBlue;
+      }
     }
   }
 }

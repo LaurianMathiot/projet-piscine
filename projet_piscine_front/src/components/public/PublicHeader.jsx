@@ -15,10 +15,10 @@ function PublicHeader() {
               <Link to="/">Accueil</Link>
             </li>
             <li>
-              <Link>Réalisations</Link>
+              <Link to="/portfolio">Portfolio</Link>
             </li>
             <li>
-              <Link>Contact</Link>
+              <a href="#footer">Contact</a>
             </li>
           </ul>
         </nav>
